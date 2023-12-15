@@ -17,20 +17,20 @@ class App {
     const centerX = this.width / 2;
     const centerY = this.height / 2;
     let angle = 0;
-    let radius = 100; // Initial radius for the spiral
-    const spiralSpacing = 100; // Spacing between text elements in the spiral
+    let radius = 100; 
+    const spiralSpacing = 100; 
 
     for (let i = 0; i < totalTexts; i++) {
-      // Calculate the position in a spiral pattern
+    
       const x = centerX + radius * Math.cos(angle);
       const y = centerY + radius * Math.sin(angle);
 
-      // Create text elements initially positioned in a spiral pattern
+    
       this.allCircles.push(new Text(x, y, this.ctx));
 
-      // Increase the angle for the next text position
+    
       angle += spiralSpacing / radius;
-      radius += 0.1; // Increment the radius for a widening spiral
+      radius += 0.1; 
     }
 
     this.audioTool = new AudioTool();
