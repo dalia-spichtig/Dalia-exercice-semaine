@@ -9,7 +9,7 @@ class Text {
   }
 
   draw() {
-    this.ctx.font = `${this.fontSize}px 'Noto Sans JP', sans-serif`; // Using 'Noto Sans JP' font for hiragana
+    this.ctx.font = `${this.fontSize}px 'Noto Sans JP', sans-serif`; 
     this.ctx.fillStyle = "magenta";
     this.ctx.fillText(`${this.letter}`, this.x, this.y);
   }
